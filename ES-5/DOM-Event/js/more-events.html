@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adnan</h1>
+    <button id="btn-more">Events</button> 
+    <br>
+    <br>
+    <input id="text-field" type="text">
+
+    <script>
+        document.getElementById('btn-more').addEventListener('mousemove',function(){
+
+            console.log('bangladesh');
+
+
+        })
+        // focus
+        document.getElementById('text-field').addEventListener('focus',function(){
+            console.log('event triggerd');
+        })
+        // blur
+        document.getElementById('text-field').addEventListener('blur',function(){
+            console.log('event triggerd and Blur');
+        })
+
+        // 
+        document.getElementById('text-field').addEventListener('keydown',function(){
+            console.log(event.target.value);
+        })
+
+    </script>
+    
+</body>
+</html>

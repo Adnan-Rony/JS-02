@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Bangladesh</h1>
+    <h1 id="header2">Pakistan</h1>
+    <button onclick="oneclickd()">Click and go to h2 tag</button>
+    <button id="event-lisenter">AddListener</button>
+
+    <br> <br> <br>
+<br>
+<p id="paragraph">Programming hero</p>
+     <input id="input-field" type="text">
+     <button id="update-button">update</button>   
+
+
+
+
+
+    <script>
+        function oneclickd()
+        {
+            const click=document.getElementById('header');
+            click.innerText='india';
+
+           
+        }
+        // option 2
+        document.getElementById('event-lisenter').addEventListener('click',function(){
+            const click2=document.getElementById('header2');
+            click2.innerText='Adnan Rony';
+        })
+
+        // 
+        document.getElementById('update-button').addEventListener('click',function(){
+            const updated=document.getElementById('input-field');
+            const inputText=updated.value;
+
+            const p=document.getElementById('paragraph');
+            p.innerText=inputText;
+            updated.value='';
+        })
+
+    </script>
+</body>
+</html>

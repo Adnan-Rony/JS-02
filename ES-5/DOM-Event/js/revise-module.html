@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <h1>Bangladesh</h1>
+    <button onclick="makered()" id="make-red">make red</button>
+
+    <button  id="make-green">make green</button>
+
+
+<input id="input-text" type="text">
+
+<!-- Option:1 -->
+    <script>
+        function makered()
+        {
+            document.body.style.backgroundColor='red';
+            
+
+        }
+    // option:2
+    document.getElementById('make-green').addEventListener('click',function
+    (){
+        document.body.style.backgroundColor='green';
+    })
+    // 
+    document.getElementById('input-text').addEventListener('keyup',function(){
+        console.log(event.target.value);
+    })
+      
+    </script>
+</section>
+</body>
+</html>

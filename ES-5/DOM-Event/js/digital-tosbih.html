@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  style="background-color: rgb(24, 23, 23);">
+    <section>
+        <div style="display: flex; justify-content: space-around; padding: 50px; align-items: center; ">
+
+            <div style=" border-radius: 15px;
+            height: 300px ; width: 500px; background-color: white ;">
+            <h2 style="text-align: center ; color: blueviolet; font-size: 40px;">Subhan-Allah</h2>
+            <p id="paragraph" style="text-align: center;font-size: 30px;">0</p>
+          <div style="display: flex; justify-content: center; gap: 20px; padding-top: 50px;">
+            <button id="incre-btn" style="padding: 10px; background-color: blueviolet; color: white;border: none ">Increment</button>
+
+            <button id="reset-btn" style="padding: 10px; background-color:red; color: white; border: none;">Reset</button>
+
+            <button id="decre-btn" style="padding: 10px; background-color: rgb(62, 61, 63); color: white;border: none">Decrement</button>
+            <button class="bg-black
+            ">Submit</button>
+           
+          </div>
+
+            </div>
+
+         
+                
+                    </div>
+        </div>
+    </section>
+                    <script>
+                        //increment
+                        let count=0;
+            document.getElementById('incre-btn').addEventListener('click',function(){
+                const p=document.getElementById('paragraph');
+                count++;
+                p.textContent=count;
+              
+
+            })
+            // decrement
+            document.getElementById('decre-btn').addEventListener('click',function(){
+                const p=document.getElementById('paragraph');
+                count--;
+                p.textContent=count;
+              
+
+            })
+            // reset
+            document.getElementById('reset-btn').addEventListener('click',function(){
+                const p=document.getElementById('paragraph');
+                count=0;
+                p.textContent=count;
+              
+
+            })
+           
+
+                    </script>
+</body>
+</html>
