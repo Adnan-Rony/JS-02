@@ -29,4 +29,4 @@ console.log(products.data[1]);
 //{ id: 2, name: 'dell', price: 100000 }
 
 console.log(products.data[1].price);
-//100000
+//1000000
