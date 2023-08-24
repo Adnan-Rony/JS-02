@@ -50,3 +50,22 @@ const user={
 console.log(user.address.street.second);
 //khagan bajar
 
+
+
+//
+const user2={
+    id:5155,
+    name:'adnan rony',
+    address:{
+       
+            first:'55/2 dottopara',
+            second:'khagan bajar',
+            third:'daffodil'
+        },
+      
+    }
+
+    console.log(user2.address.street?.second); //optonal chain
+
+
+
