@@ -30,3 +30,23 @@ console.log(products.data[1]);
 
 console.log(products.data[1].price);
 //1000000
+
+
+
+//
+const user={
+    id:5155,
+    name:'adnan rony',
+    address:{
+        street:{
+            first:'55/2 dottopara',
+            second:'khagan bajar',
+            third:'daffodil'
+        },
+        city:'dhaka'
+    }
+
+}
+console.log(user.address.street.second);
+//khagan bajar
+
