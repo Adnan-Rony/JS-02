@@ -5,4 +5,4 @@ first=()=>{
 }
 
 first();
-console.log("rony")
+console.log("adnan")
